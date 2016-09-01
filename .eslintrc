@@ -1,0 +1,9 @@
+{
+  "extends": "exeto-base",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "prefer-rest-params": 0
+  }
+}
