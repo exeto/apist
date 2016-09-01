@@ -27,7 +27,6 @@ nock('http://example.com/api')
   .reply(404);
 
 test('build url', t => {
-  t.plan(6);
   t.is(user.buildUrl(), '/users');
   t.is(user.buildUrl(20), '/users/20');
   t.is(user.buildUrl(20, { name: 'John' }), '/users/20?name=John');
