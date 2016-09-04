@@ -114,6 +114,10 @@ Type: `any`
 
 Type: `any`
 
+## Related
+
+- [redux-apist](https://github.com/exeto/redux-apist) - Creator API actions for redux-thunk
+
 ## License
 
 [MIT](LICENSE.md) © [Timofey Dergachev](https://exeto.me/)
