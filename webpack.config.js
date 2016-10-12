@@ -1,4 +1,5 @@
 /* eslint-disable strict */
+
 'use strict';
 
 const webpack = require('webpack');

@@ -24,7 +24,7 @@ nock('http://example.com')
   .get('/users/404')
   .reply(404);
 
-test('build url', t => {
+test('build url', (t) => {
   const user = new Apist('users');
 
   t.is(user.buildUrl(), '/users');
@@ -37,7 +37,7 @@ test('build url', t => {
   t.is(user.buildUrl(20), 'http://example.com/api/users/20');
 });
 
-test('CRUD methods', t => {
+test('CRUD methods', (t) => {
   const user = new Apist('users');
   user.host = 'http://example.com';
 
@@ -51,7 +51,7 @@ test('CRUD methods', t => {
   ]);
 });
 
-test('combine requests', t => {
+test('combine requests', (t) => {
   const user = new Apist('users');
   user.host = 'http://example.com';
 
