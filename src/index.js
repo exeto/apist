@@ -1,3 +1,5 @@
+/* eslint class-methods-use-this: off */
+
 import avali from 'avali';
 import queryStringify from 'qs/lib/stringify';
 
@@ -36,7 +38,7 @@ export default class Apist {
     const request = fetch(url, options)
       .then(res => this.deserialize(options, res))
       .then(result => (delete cache[url] && result))
-      .catch(err => {
+      .catch((err) => {
         delete cache[url];
         throw err;
       })
