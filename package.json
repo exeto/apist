@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint src",
-    "test": "npm run lint && nyc ava --require babel-register",
+    "test": "npm run lint && nyc ava",
     "clean": "rm -rf lib dist",
     "build:commonjs": "babel src --out-dir lib",
     "build:umd": "NODE_ENV=development webpack src/index.js dist/apist.js",
@@ -33,7 +33,7 @@
     "qs": "^6.2.1"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.17.0",
     "babel-cli": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-object-assign": "^6.8.0",
@@ -46,5 +46,8 @@
     "node-fetch": "^1.6.0",
     "nyc": "^9.0.1",
     "webpack": "^1.13.1"
+  },
+  "ava": {
+    "require": ["babel-register"]
   }
 }
