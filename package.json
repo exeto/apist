@@ -29,7 +29,7 @@
     "request"
   ],
   "dependencies": {
-    "avali": "^0.1.0",
+    "avali": "^0.2.1",
     "qs": "^6.2.1"
   },
   "devDependencies": {
