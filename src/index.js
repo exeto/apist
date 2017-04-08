@@ -1,4 +1,4 @@
-/* eslint class-methods-use-this: off */
+/* eslint-disable class-methods-use-this */
 
 import avali from 'avali';
 import queryStringify from 'qs/lib/stringify';
@@ -7,7 +7,7 @@ import join from './utils/urlJoin';
 
 export default class Apist {
   constructor(resource) {
-    avali(['str'], arguments);
+    avali('str', resource);
 
     this.cache = {};
     this.resource = resource;
@@ -71,12 +71,12 @@ export default class Apist {
   }
 
   fetchAll(query) {
-    avali(['obj, nil'], arguments);
+    avali(['obj, undef'], query);
     return this.callApi('GET', { query });
   }
 
   fetch(id, query) {
-    avali(['num, str', 'obj, nil'], arguments);
+    avali(['num, str', 'obj, undef'], arguments);
     return this.callApi('GET', { id, query });
   }
 
@@ -85,12 +85,12 @@ export default class Apist {
   }
 
   update(id, data) {
-    avali(['num, str'], arguments);
+    avali(['num, str'], id);
     return this.callApi('PUT', { id, data });
   }
 
   delete(id) {
-    avali(['num, str'], arguments);
+    avali(['num, str'], id);
     return this.callApi('DELETE', { id });
   }
 }
