@@ -1,4 +1,6 @@
 # apist
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/exeto/apist.svg)](https://greenkeeper.io/)
 [![Build Status][buildstat-image]][buildstat-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependency Status][depstat-image]][depstat-url]
 
 > Simple REST API client
