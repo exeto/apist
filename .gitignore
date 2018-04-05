@@ -14,5 +14,4 @@ yarn.lock
 coverage
 
 # OTHER
-dist
 lib
