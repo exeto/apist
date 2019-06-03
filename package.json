@@ -29,7 +29,7 @@
     "qs": "^6.2.1"
   },
   "devDependencies": {
-    "ava": "^1.0.1",
+    "ava": "^2.0.0",
     "babel-cli": "^6.11.4",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-preset-env": "^1.6.1",
