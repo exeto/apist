@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Simple REST API client",
   "main": "lib/index.js",
-  "repository": "exeto/apist",
+  "repository": "exeto-archive/apist",
   "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/)",
   "license": "MIT",
   "scripts": {

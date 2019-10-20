@@ -1,7 +1,10 @@
 # apist
+
 [![Build Status][buildstat-image]][buildstat-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependency Status][depstat-image]][depstat-url]
 
 > Simple REST API client
+
+**THIS PACKAGE IS NO LONGER MAINTAINED**
 
 ## Install
 
@@ -16,8 +19,7 @@ import Apist from 'apist';
 
 const users = new Apist('users');
 
-users.fetch(10, { query: 'query' })
-  .then(data => console.log(data.firstName));
+users.fetch(10, { query: 'query' }).then(data => console.log(data.firstName));
 //=> GET /users/10?query=query
 ```
 
@@ -116,7 +118,7 @@ Type: `any`
 
 ## Related
 
-- [redux-apist](https://github.com/exeto/redux-apist) - Creator API actions for redux-thunk
+- [redux-apist](https://github.com/exeto-archive/redux-apist) - Creator API actions for redux-thunk
 
 ## License
 
